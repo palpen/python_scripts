@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 
+'''
+Simple python script that takes a list of Chinese characters and translate them to English using the Google Cloud Translation API
+'''
+
 import requests
 import json
 import pandas
@@ -20,7 +24,6 @@ def translate(api_key, source, target, text):
 if __name__ == '__main__':
 
     PATH = "/Users/palermospenano/Desktop/Dropbox/temporary/nicolai_py"
-    # varlist = "{0}/vars2.csv".format(PATH)
     varlist = "{0}/vars2test.csv".format(PATH)
 
     # load api key from secret json file
